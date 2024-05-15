@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 8px; /* Adjusted from 10px */
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.content {
+  margin-top: 60px; /* Adjusted from 80px */
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 0;
+      z-index: 1;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .burger {
+      display: block;
+  }
+
+  .active {
+      display: flex;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 80px;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 80px;
+  border: 2px solid #333; /* Add border to the entire table */
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  border-bottom: 2px solid #fff; /* Increase border width for table header */
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
